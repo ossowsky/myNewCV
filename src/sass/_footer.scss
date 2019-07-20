@@ -1,0 +1,11 @@
+.footer {
+  color: #808080;
+  padding: 10px;
+
+  &__clause {
+    font: {
+      size: 10px;
+      style: italic;
+    }
+  }
+}

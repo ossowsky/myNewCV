@@ -1,0 +1,33 @@
+@import './mixins';
+
+
+.aside {
+  background-color: #00003F;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  max-width: 350px;
+  padding: 10px;
+  width: 350px;
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    &__title {
+      padding: 5px 0;
+      text-transform: uppercase;  
+    }
+
+    &__list {
+      @include reset-ul();
+    }
+
+    &__link {
+      color: #FFF;
+      text-decoration: none;
+    }
+  }
+}

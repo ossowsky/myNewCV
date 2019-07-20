@@ -1,0 +1,27 @@
+.header {
+  align-items: center; // align-items because flex-direction: column;
+  background-color: #00003F;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 10px;
+
+  &__image {
+    height: 144px;
+    width: 144px;
+  }
+
+  &__name {
+    text-align: center;
+
+    &--large {
+      font-size: 45px;
+      letter-spacing: 4px;
+    }
+
+    &--yellow {
+      color: #F0DB4F;
+    }
+  }  
+}

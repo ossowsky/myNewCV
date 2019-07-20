@@ -1,0 +1,38 @@
+@import './mixins';
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;  
+  
+    &__header {
+      border-bottom: 1px solid #000;
+      padding: 5px 0;
+    }
+
+    &__title {
+      text-transform: uppercase;
+    }
+
+    &__article {
+      padding: 5px 0;
+    }
+
+    &__list {
+      @include reset-ul();    
+    }
+
+    &__article {
+      line-height: 23px;
+    }
+
+    &__indent {
+      text-indent: 35px;
+    }
+  }
+}
